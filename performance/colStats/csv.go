@@ -24,7 +24,7 @@ func avg(data []float64) float64 {
 // statsFunc defines a generic statistical function
 type statsFunc func(data []float64) float64
 
-func csv2float(r io.Reader, column int) ([]float64, error) {
+func csv2Float(r io.Reader, column int) ([]float64, error) {
 	// Create the CSV Reader used to read in data from CSV files
 	cr := csv.NewReader(r)
 

@@ -51,7 +51,7 @@ func run(filenames []string, op string, column int, out io.Writer) error {
 		}
 
 		// Parse the CSV into a slice of float64 numbers
-		data, err := csv2float(f, column)
+		data, err := csv2Float(f, column)
 		if err != nil {
 			return err
 		}
